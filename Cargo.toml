@@ -1,0 +1,18 @@
+[package]
+name = "owned_json_deserializer"
+version = "1.0.0"
+edition = "2021"
+authors = ["Arc-blroth <45273859+Arc-blroth@users.noreply.github.com>"]
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/Arc-blroth/owned_json_deserializer"
+description = "Because apparently `serde_json` only deserializes through a reference™."
+keywords = ["json", "serde", "serialization"]
+categories = ["encoding"]
+
+[dependencies]
+serde = { version = "1.0", default-features = false }
+serde_json = { version = "1.0" }
+
+[dev-dependencies]
+serde = { version = "1.0", features = ["derive"] }
